@@ -4,153 +4,252 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Example HTML page showcasing various HTML tags and attributes">
+    <meta name="keywords" content="HTML, tags, attributes, example">
+    <meta name="author" content="ChatGPT">
+    <title>Comprehensive HTML Tags Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header,
+        footer {
+            background-color: #f4f4f4;
+            padding: 10px;
+            text-align: center;
+        }
+
+        main {
+            margin: 20px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        figure {
+            margin: 20px 0;
+        }
+
+        figcaption {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .alert {
+            color: red;
+            font-weight: bold;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .example {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px 0;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>hellow sir !</h1>
-    <a href="#">this is a anchor tag</a> <br /> <br />
-    <abbr title="World Health Organization">WHO</abbr>
-    <address>
-        written by <a href="mailto:kuldeep.s@sarvadhi.com">kuldeep</a>. <br />
-        Visit us at: <br />
-        Example.com <br />
-        Box 564, Disneyland <br />
-        USA
-    </address>
-    <article>
-        <h3>Article One of the Constitution of the United States</h2>
-            <p>establishes the legislative branch of the federal government, the United States Congress. Under Article
-                One,
-                Congress is a bicameral legislature consisting of the House of Representatives and the Senate.[1]: 73 
-                Article One grants Congress various enumerated powers and the ability to pass laws "necessary and
-                proper" to
-                carry out those powers. Article One also establishes the procedures for passing a bill and places
-                various
-                limits on the powers of Congress and the states from abusing their powers.</p>
-    </article>
-    <audio controls>
-        <source src="../AudioVideo/toy-story-short-happy-audio-logo-short-cartoony-intro-outro-music-125627.mp3"
-            type="audio/mpeg">
-        this is one audio
-    </audio> <br>
-    <video width="320" height="240" controls>
-        <source src="../AudioVideo/2946-164933125_small.mp4" type="video/mp4">
-        this is one video
-    </video> <br>
+    <header>
+        <h1>HTML Tags and Attributes Example</h1>
+        <nav>
+            <ul>
+                <li><a href="#section1">Section 1</a></li>
+                <li><a href="#section2">Section 2</a></li>
+                <li><a href="#form">Form</a></li>
+                <li><a href="#media">Media</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <label for="file">Downloading progress:</label>
-    <progress id="file" value="37" max="100"> 37% </progress> <br><br><br>
+    <main>
+        <section id="section1">
+            <h2>Section 1: Text Formatting and Structure</h2>
+            <p>This section demonstrates various HTML tags and their attributes:</p>
 
-    <q> my first html page </q> <br><br><br>
+            <article>
+                <h3>Article Title</h3>
+                <p>This is a paragraph with <strong>strong</strong> and <em>emphasized</em> text.
+                    <a href="https://example.com" target="_blank" title="External Link">Click here</a> to visit an
+                    external site.
+                </p>
+                <p>Here's a list of items:</p>
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+                <p>Here’s an ordered list:</p>
+                <ol>
+                    <li>First</li>
+                    <li>Second</li>
+                    <li>Third</li>
+                </ol>
+                <p>Blockquote example:</p>
+                <blockquote>
+                    <p>"This is a blockquote example with a <cite>source reference</cite>."</p>
+                </blockquote>
+            </article>
 
-    <search>
-        <form>
-            <input name="fsrch" id="fsrch" placeholder="Search prodect">
-        </form>
-    </search> <br><br><br>
+            <aside>
+                <h4>Sidebar Information</h4>
+                <p>This is additional information that complements the main content.</p>
+            </aside>
 
-    <bdi> carry out those powers. Article One also establishes the procedures for passing a bill and places
-        various
-        limits on the powers of Congress and the states from abusing their powers.
-        <p> carry out those powers. Article
-            One also establishes the procedures for passing a bill and places
-        </p>
-    </bdi>
-    <br>
-    <br> <br>
+            <figure>
+                <img src="https://via.placeholder.com/400" alt="Placeholder Image">
+                <figcaption>Figure 1: A placeholder image used for demonstration purposes.</figcaption>
+            </figure>
+        </section>
 
-    <bdo dir="rtl"> element is not supported in the browser, the username of the Arabic user would confuse the text (the
-        bidirectional algorithm would put the colon and the number "90" next to the word "User" rather than next to the
-        word "points")
-    </bdo>
+        <section id="section2">
+            <h2>Section 2: Tables and Forms</h2>
+            <table>
+                <caption>Sample Table</caption>
+                <thead>
+                    <tr>
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                        <th>Header 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Row 1, Cell 1</td>
+                        <td>Row 1, Cell 2</td>
+                        <td>Row 1, Cell 3</td>
+                    </tr>
+                    <tr>
+                        <td>Row 2, Cell 1</td>
+                        <td>Row 2, Cell 2</td>
+                        <td>Row 2, Cell 3</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Footer Row</td>
+                    </tr>
+                </tfoot>
+            </table>
 
-    <br><br>
+            <form action="/submit" method="post" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name">
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+                    <label for="profile-picture">Profile Picture:</label>
+                    <input type="file" id="profile-picture" name="profile-picture" accept="image/*">
+                    <br>
+                    <label for="bio">Biography:</label>
+                    <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Tell us about yourself"></textarea>
+                    <br>
+                    <fieldset>
+                        <legend>Preferences</legend>
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Subscribe to newsletter</label>
+                        <br>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                        <br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                        <br>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </fieldset>
+                    <br>
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </section>
 
-    <label for="cars">Choose a car:</label>
+        <section id="media">
+            <h2>Section 3: Multimedia</h2>
+            <figure>
+                <video width="320" height="240" controls>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <figcaption>Figure 2: An example video demonstrating HTML5 video capabilities.</figcaption>
+            </figure>
 
-    <select name="cars" id="cars">
-        <option value="volvo">Volvo</option>
-        <option value="saab">Saab</option>
-        <option value="mercedes">Mercedes</option>
-        <option value="audi">Audi</option>
-    </select>
+            <figure>
+                <audio controls>
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <figcaption>Figure 3: An example audio demonstrating HTML5 audio capabilities.</figcaption>
+            </figure>
+        </section>
 
-    <p>My mother has <span style="color:blue">blue</span> eyes.</p> <br><br>
+        <section>
+            <h2>Section 4: Advanced HTML Features</h2>
+            <details>
+                <summary>Details Summary</summary>
+                <p>This is additional information hidden under a details element. Clicking the summary reveals this
+                    content.</p>
+            </details>
 
-    <p>This text contains <sup>superscript</sup> text.</p> <br><br>
+            <dialog open>
+                <p>This is a dialog box. You can <button
+                        onclick="document.querySelector('dialog').close()">close</button> it.</p>
+            </dialog>
 
+            <address>
+                Contact us at: <a href="mailto:info@example.com">info@example.com</a>
+            </address>
+        </section>
 
-    <p>This text contains <sub>superscript</sub> text.</p> <br><br>
+        <section>
+            <h2>Section 5: HTML5 Elements</h2>
+            <article>
+                <h3>Article Example</h3>
+                <p>This is an article within the HTML5 document.</p>
+            </article>
 
+            <nav>
+                <ul>
+                    <li><a href="#section1">Back to Section 1</a></li>
+                </ul>
+            </nav>
 
-    <svg width="100" height="100">
-        <circle cx="50" cy="50" r="40" stroke="red" stroke-width="3" fill="yellow" />
-    </svg> <br><br>
-
-    <ul> <b>list</b>
-        <li>phone</li>
-        <li>leptop</li>
-        <li>care</li>
-        <li>bike</li>
-    </ul>
-
-    <ol><b>list</b>
-        <li>phone</li>
-        <li>leptop</li>
-        <li>care</li>
-        <li>bike</li>
-    </ol>
-    <br><br>
-    <label for="browser">Choose your browser from the list:</label>
-    <input list="browsers" name="browser" id="browser">
-    <datalist id="browsers">
-        <option value="Edge">
-        <option value="Firefox">
-        <option value="Chrome">
-        <option value="Opera">
-        <option value="Safari">
-    </datalist> <br><br>
-
-    <table>
-        <colgroup>
-            <col style="background-color:red">
-            <col style="background-color:yellow">
-            <col style="background-color:yellow">
-
-        </colgroup>
-        <caption>Monthly savings</caption>
-        <tr>
-            <th>ISBN</th>
-            <th>Title</th>
-            <th>Price</th>
-        </tr>
-        <tr>
-            <td>3476896</td>
-            <td>My first HTML</td>
-            <td>$53</td>
-        </tr>
-    </table> <br><br>
-
-    <form action="/action_page.php">
-        <fieldset>
-            <legend>Personalia:</legend>
-            <label for="fname">First name:</label>
-            <input type="text" id="fname" name="fname"><br><br>
-            <label for="lname">Last name:</label>
-            <input type="text" id="lname" name="lname"><br><br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email"><br><br>
-            <label for="birthday">Birthday:</label>
-            <input type="date" id="birthday" name="birthday"><br><br>
-            <input type="submit" value="Submit">
-        </fieldset>
-    </form>
-
-
-
-
-
+            <footer>
+                <p>&copy; 2024 HTML Tags Example. All rights reserved.</p>
+            </footer>
+        </section>
+    </main>
 </body>
 
 </html>
