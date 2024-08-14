@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        overflow: hidden;
+        font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+
+    :root {
+        --color: #fff;
+    }
+
+    .main-div {
+        display: block;
+        padding: 50px 0;
+        background-color: aliceblue;
+
+    }
+
+    .container {
+        width: 100%;
+        max-width: 1200px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        padding: 0 15px;
+        display: block;
+    }
+
+    .main-div .inner-div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 25px;
+
+    }
+
+    .item-4 {
+        grid-row: 1/2;
+    }
+
+    .item-1 {
+        grid-row: 1/2;
+    }
+
+
+
+    .main-div .inner-div .item-inner {
+        display: block;
+        padding: 32px 35px;
+        text-align: center;
+        background: #fff;
+        box-shadow: rgba(99, 99, 99, .2) 0px 2px 8px 0px;
+        border-radius: 10px;
+        line-height: 20px;
+    }
+
+    .main-div .inner-div .item-inner>h2 {
+        color: #0b509b;
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    .main-div .inner-div .item-inner>span {
+        font-size: 18px;
+        font-weight: 600;
+        color: #333;
+        line-height: 15px;
+        text-transform: capitalize;
+    }
+
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+        .main-div .inner-div .item-inner {
+            padding: 26px 30px;
+        }
+
+    }
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        .main-div .inner-div .item-inner {
+            padding: 22px 28px;
+        }
+
+        .main-div .inner-div .item-inner>h2 {
+            font-size: 35px;
+        }
+    }
+
+    @media (min-width: 576px) and (max-width: 767.98px) {
+        .main-div .inner-div .item-inner {
+            padding: 18px 25px;
+        }
+
+        .main-div .inner-div {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @media (max-width: 575.98px) {
+        .main-div .inner-div .item-inner {
+            padding: 18px 25px;
+        }
+
+        .main-div .inner-div .item-inner>h2 {
+            font-size: 30px;
+        }
+
+        .main-div .inner-div {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+</style>
+
+<body>
+    <div class="main-div">
+        <div class="container">
+            <div class="inner-div">
+
+                <div class="item-inner item-1">
+                    <h2>6+</h2>
+                    <span>years of experience</span>
+                </div>
+                <div class="item-inner item-2">
+                    <h2>275+</h2>
+                    <span>Products</span>
+                </div>
+                <div class="item-inner item-3">
+                    <h2>41K+</h2>
+                    <span>Satisfied Customers</span>
+                </div>
+                <div class="item-inner item-4">
+                    <h2>185+</h2>
+                    <span>Countries</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
